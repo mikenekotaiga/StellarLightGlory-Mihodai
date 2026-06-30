@@ -1,0 +1,259 @@
+/* -----------------------------
+   Stellar Light Glory
+   Mobile Landing Page
+------------------------------ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#0d0d0d;
+
+    color:white;
+
+    font-family:
+    "Yu Gothic",
+    sans-serif;
+
+}
+
+.container{
+
+    width:100%;
+    max-width:500px;
+
+    margin:auto;
+
+    padding:20px 15px 40px;
+
+}
+
+/* カード */
+
+.card{
+
+    background:#1a1a1a;
+
+    border-radius:18px;
+
+    margin-bottom:25px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+    0 8px 20px rgba(0,0,0,.45);
+
+}
+
+/* フライヤー */
+
+.flyer{
+
+    width:100%;
+
+    display:block;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.flyer:hover{
+
+    transform:scale(1.01);
+
+}
+
+/* NEW SONG */
+
+h2{
+
+    text-align:center;
+
+    font-size:24px;
+
+    padding-top:20px;
+
+    letter-spacing:2px;
+
+}
+
+.jacket{
+
+    width:75%;
+
+    display:block;
+
+    margin:25px auto;
+
+    border-radius:15px;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.6);
+
+}
+
+/* プレーヤー */
+
+audio{
+
+    width:90%;
+
+    display:block;
+
+    margin:25px auto;
+
+}
+
+/* ボタン共通 */
+
+.download,
+.follow{
+
+    display:block;
+
+    width:90%;
+
+    margin:20px auto 25px;
+
+    padding:16px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    border-radius:12px;
+
+    transition:.25s;
+
+}
+
+/* ダウンロード */
+
+.download{
+
+    background:#ff2d55;
+
+}
+
+.download:hover{
+
+    background:#ff4f72;
+
+}
+
+/* LitLink */
+
+.follow{
+
+    background:#3a3a3a;
+
+}
+
+.follow:hover{
+
+    background:#555;
+
+}
+
+/* 拡大表示 */
+
+#viewer{
+
+    display:none;
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.95);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+#viewer img{
+
+    width:95%;
+
+    max-height:95%;
+
+    object-fit:contain;
+
+}
+
+/* フェードイン */
+
+.fade{
+
+    animation:fade .8s;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* スマホ最適化 */
+
+@media(max-width:480px){
+
+.container{
+
+padding:12px;
+
+}
+
+h2{
+
+font-size:22px;
+
+}
+
+.download,
+.follow{
+
+font-size:17px;
+
+padding:15px;
+
+}
+
+}
